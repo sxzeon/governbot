@@ -1,6 +1,6 @@
 import discord
 
-token = "token"
+token = "TOKEN"
 text = "**욕설 사용** \n> 욕설이 감지되었습니다."
 
 app = discord.Client()
@@ -200,6 +200,21 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content.startswith("She발"):
+        channel = message.channel
+        await message.delete()
+        await message.channel.send(text)
+
+    if message.content.startswith("시팔"):
+        channel = message.channel
+        await message.delete()
+        await message.channel.send(text)
+
+    if message.content.startswith("십8"):
+        channel = message.channel
+        await message.delete()
+        await message.channel.send(text)
+
+    if message.content.startswith("시8"):
         channel = message.channel
         await message.delete()
         await message.channel.send(text)
