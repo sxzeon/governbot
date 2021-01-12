@@ -1,6 +1,6 @@
 import discord
 
-token = "Nzk3Nzg1MzAzNTUyMDk4MzM0.X_rhdg.gVfUD3utwSzfzcEHX7JPJO_PwrI"
+token = "token"
 text = "**욕설 사용** \n> 욕설이 감지되었습니다."
 
 app = discord.Client()
