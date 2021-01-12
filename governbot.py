@@ -198,6 +198,10 @@ async def on_message(message):
         embed.add_field(name="욕설 검열", value="시X 등의 욕설을 할 시 검열합니다", inline=False)
         embed.add_field(name="그 외의 기능들은...", value="준비 중이예요!", inline=False)
         await message.channel.send(embed=embed)
-
+        
+    if message.content.startswith("She발"):
+        channel = message.channel
+        await message.delete()
+        await message.channel.send(text)
         
 app.run(token)
